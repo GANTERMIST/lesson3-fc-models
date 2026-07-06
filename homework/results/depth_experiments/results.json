@@ -1,0 +1,56 @@
+{
+  "1_1_depth_comparison": {
+    "1 layer (linear)": {
+      "final_train": 0.9505915100904663,
+      "final_test": 0.9416666666666667,
+      "train_time": 1.22650146484375,
+      "n_params": 650
+    },
+    "2 layers (1 hidden)": {
+      "final_train": 0.9979123173277662,
+      "final_test": 0.9777777777777777,
+      "train_time": 1.3262133598327637,
+      "n_params": 9610
+    },
+    "3 layers (2 hidden)": {
+      "final_train": 0.9986082115518441,
+      "final_test": 0.9722222222222222,
+      "train_time": 1.6952881813049316,
+      "n_params": 26122
+    },
+    "5 layers (4 hidden)": {
+      "final_train": 1.0,
+      "final_test": 0.9833333333333333,
+      "train_time": 2.724790096282959,
+      "n_params": 59146
+    },
+    "7 layers (6 hidden)": {
+      "final_train": 1.0,
+      "final_test": 0.9722222222222222,
+      "train_time": 3.684159517288208,
+      "n_params": 92170
+    }
+  },
+  "1_2_overfitting": {
+    "No regularization": {
+      "final_train": 1.0,
+      "final_test": 0.9777777777777777,
+      "gap": 0.022222222222222254
+    },
+    "Dropout 0.3": {
+      "final_train": 0.9770354906054279,
+      "final_test": 0.9805555555555555,
+      "gap": -0.003520064950127577
+    },
+    "BatchNorm": {
+      "final_train": 0.9944328462073765,
+      "final_test": 0.9694444444444444,
+      "gap": 0.024988401762932044
+    },
+    "Dropout + BN": {
+      "final_train": 0.9784272790535838,
+      "final_test": 0.9888888888888889,
+      "gap": -0.010461609835305086
+    }
+  }
+}
